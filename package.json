@@ -1,0 +1,44 @@
+{
+  "name": "discover-ghana-travel-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive travel and booking website showcasing the beauty and culture of Ghana",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "lint": "echo 'Linting not configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/discover-ghana-travel-website.git"
+  },
+  "keywords": [
+    "travel",
+    "ghana",
+    "tourism",
+    "booking",
+    "responsive",
+    "modern",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "africa"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/discover-ghana-travel-website/issues"
+  },
+  "homepage": "https://github.com/your-username/discover-ghana-travel-website#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
