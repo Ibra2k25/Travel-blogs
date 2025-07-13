@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Discover Ghana</title>
+    <meta name="description" content="Choose from our carefully curated Ghana travel packages. From heritage tours to adventure packages, find the perfect Ghana experience">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>🇬🇭 Discover Ghana</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="packages.html" class="nav-link active">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="culture.html" class="nav-link">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link book-now-btn">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Ghana Travel Packages</h1>
+            <p>Carefully curated experiences showcasing the best of Ghana's culture, history, and natural beauty</p>
+        </div>
+    </section>
+
+    <!-- Package Filter -->
+    <section class="package-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="heritage">Heritage & Culture</button>
+                <button class="filter-btn" data-filter="nature">Nature & Wildlife</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-detailed">
+        <div class="container">
+            <div class="packages-grid">
+                <!-- Heritage Explorer Package -->
+                <div class="package-card-detailed" data-category="heritage" data-aos="fade-up">
+                    <div class="package-image heritage-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Popular</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (124 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Heritage Explorer</h3>
+                        <p class="package-description">Dive deep into Ghana's rich history and cultural heritage with visits to historic castles, traditional villages, and cultural sites.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 12 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Easy</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Cape Coast Castle guided tour</li>
+                                <li><i class="fas fa-check"></i> Elmina Castle historical exploration</li>
+                                <li><i class="fas fa-check"></i> Kakum National Park canopy walk</li>
+                                <li><i class="fas fa-check"></i> Traditional Fante fishing village visit</li>
+                                <li><i class="fas fa-check"></i> Ashanti cultural performances</li>
+                                <li><i class="fas fa-check"></i> Kente weaving workshop</li>
+                                <li><i class="fas fa-check"></i> Local cuisine cooking class</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-bed"></i>
+                                    <span>6 nights accommodation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Daily breakfast & 4 dinners</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transportation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Expert local guide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$899</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=heritage" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ghana Complete Package -->
+                <div class="package-card-detailed featured" data-category="heritage" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image complete-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Best Value</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (89 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Ghana Complete</h3>
+                        <p class="package-description">The ultimate Ghana experience covering all major regions, from the bustling capital to the serene northern landscapes.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>10 Days / 9 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 15 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Moderate</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Accra city tour and markets</li>
+                                <li><i class="fas fa-check"></i> Cape Coast and Elmina Castles</li>
+                                <li><i class="fas fa-check"></i> Kumasi Ashanti Kingdom exploration</li>
+                                <li><i class="fas fa-check"></i> Tamale northern culture experience</li>
+                                <li><i class="fas fa-check"></i> Mole National Park safari</li>
+                                <li><i class="fas fa-check"></i> Volta Region waterfalls</li>
+                                <li><i class="fas fa-check"></i> Traditional crafts workshops</li>
+                                <li><i class="fas fa-check"></i> Lake Volta boat cruise</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-bed"></i>
+                                    <span>9 nights accommodation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>All meals included</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-plane"></i>
+                                    <span>Domestic flights</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Expert local guides</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$1,299</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=complete" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature & Wildlife Package -->
+                <div class="package-card-detailed" data-category="nature" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-image nature-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Adventure</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (156 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Nature & Wildlife</h3>
+                        <p class="package-description">Perfect for nature lovers and wildlife enthusiasts, exploring Ghana's national parks and natural wonders.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>5 Days / 4 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 10 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Moderate</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Mole National Park safari</li>
+                                <li><i class="fas fa-check"></i> Elephant and antelope spotting</li>
+                                <li><i class="fas fa-check"></i> Kakum canopy walkway</li>
+                                <li><i class="fas fa-check"></i> Wli waterfalls hiking</li>
+                                <li><i class="fas fa-check"></i> Tafi monkey sanctuary</li>
+                                <li><i class="fas fa-check"></i> Bird watching sessions</li>
+                                <li><i class="fas fa-check"></i> Nature photography workshops</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-bed"></i>
+                                    <span>4 nights eco-lodges</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>All meals & snacks</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-binoculars"></i>
+                                    <span>Safari equipment</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Nature guide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$749</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=nature" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Immersion Package -->
+                <div class="package-card-detailed" data-category="heritage" data-aos="fade-up">
+                    <div class="package-image cultural-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Authentic</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (67 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Cultural Immersion</h3>
+                        <p class="package-description">Live like a local and experience authentic Ghanaian culture through homestays, traditional ceremonies, and community activities.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>8 Days / 7 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 8 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Easy</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Traditional village homestays</li>
+                                <li><i class="fas fa-check"></i> Ashanti royal ceremonies</li>
+                                <li><i class="fas fa-check"></i> Kente and Adinkra workshops</li>
+                                <li><i class="fas fa-check"></i> Traditional drumming classes</li>
+                                <li><i class="fas fa-check"></i> Local cooking experiences</li>
+                                <li><i class="fas fa-check"></i> Market visits with locals</li>
+                                <li><i class="fas fa-check"></i> Community development projects</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-home"></i>
+                                    <span>Homestay accommodation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Traditional meals</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Cultural activities</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Local family guides</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$999</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=cultural" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure & Hiking Package -->
+                <div class="package-card-detailed" data-category="adventure" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image adventure-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Active</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (93 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Adventure & Hiking</h3>
+                        <p class="package-description">For the adventurous spirit, featuring hiking, rock climbing, and outdoor activities across Ghana's diverse landscapes.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>6 Days / 5 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 12 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Challenging</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Mount Afadja hiking (highest peak)</li>
+                                <li><i class="fas fa-check"></i> Wli waterfalls trekking</li>
+                                <li><i class="fas fa-check"></i> Aburi mountain biking</li>
+                                <li><i class="fas fa-check"></i> Kakum canopy adventure</li>
+                                <li><i class="fas fa-check"></i> Rock climbing at Shai Hills</li>
+                                <li><i class="fas fa-check"></i> Kayaking on Lake Volta</li>
+                                <li><i class="fas fa-check"></i> Bush camping experience</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-camping"></i>
+                                    <span>Camping & lodge mix</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Energy meals & snacks</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span>All equipment</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-first-aid"></i>
+                                    <span>Safety gear & guide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$849</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=adventure" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Ghana Package -->
+                <div class="package-card-detailed" data-category="luxury" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-image luxury-bg">
+                        <div class="package-overlay">
+                            <span class="package-badge">Luxury</span>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (34 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Luxury Ghana Experience</h3>
+                        <p class="package-description">Experience Ghana in ultimate comfort with luxury accommodations, private tours, and exclusive experiences.</p>
+                        
+                        <div class="package-details">
+                            <div class="package-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                            <div class="package-group">
+                                <i class="fas fa-users"></i>
+                                <span>Max 6 people</span>
+                            </div>
+                            <div class="package-difficulty">
+                                <i class="fas fa-walking"></i>
+                                <span>Luxury</span>
+                            </div>
+                        </div>
+
+                        <div class="package-itinerary">
+                            <h4>Package Highlights</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Private jet transfers</li>
+                                <li><i class="fas fa-check"></i> 5-star luxury hotels</li>
+                                <li><i class="fas fa-check"></i> Private cultural tours</li>
+                                <li><i class="fas fa-check"></i> Exclusive chef experiences</li>
+                                <li><i class="fas fa-check"></i> VIP access to attractions</li>
+                                <li><i class="fas fa-check"></i> Personal photographer</li>
+                                <li><i class="fas fa-check"></i> Spa and wellness sessions</li>
+                            </ul>
+                        </div>
+
+                        <div class="package-includes">
+                            <h4>What's Included</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Luxury accommodation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-wine-glass"></i>
+                                    <span>Gourmet dining</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>Private transportation</span>
+                                </div>
+                                <div class="include-item">
+                                    <i class="fas fa-concierge-bell"></i>
+                                    <span>Personal concierge</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$2,499</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="booking.html?package=luxury" class="btn btn-primary">Book This Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Package CTA -->
+    <section class="custom-package-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't See What You're Looking For?</h2>
+                <p>We specialize in creating custom itineraries tailored to your specific interests, budget, and travel style.</p>
+                <div class="cta-buttons">
+                    <a href="booking.html?package=custom" class="btn btn-primary">Create Custom Package</a>
+                    <a href="contact.html" class="btn btn-secondary">Talk to Our Experts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🇬🇭 Discover Ghana</h3>
+                    <p>Your gateway to experiencing the rich culture, natural beauty, and warm hospitality of Ghana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Package Types</h4>
+                    <ul>
+                        <li><a href="#heritage">Heritage & Culture</a></li>
+                        <li><a href="#nature">Nature & Wildlife</a></li>
+                        <li><a href="#adventure">Adventure Tours</a></li>
+                        <li><a href="#luxury">Luxury Experiences</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for travel tips and special offers</p>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="newsletter-form">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Discover Ghana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Package filtering functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter packages
+                document.querySelectorAll('.package-card-detailed').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

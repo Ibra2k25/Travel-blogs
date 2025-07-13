@@ -983,3 +983,1359 @@ body {
 .d-block { display: block; }
 .d-flex { display: flex; }
 .d-grid { display: grid; }
+
+/* Multi-Page Specific Styles */
+
+/* Page Headers */
+.page-header {
+    padding: 120px 0 80px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation Active States */
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Preview Sections */
+.destinations-preview,
+.packages-preview,
+.culture-preview {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.packages-preview {
+    background: var(--white);
+}
+
+/* CTA Sections */
+.cta-section,
+.custom-package-cta,
+.cultural-experiences-cta {
+    padding: 80px 0;
+    background: var(--gradient-secondary);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Destinations Detailed */
+.destinations-detailed {
+    padding: 80px 0;
+}
+
+.destination-detail {
+    margin-bottom: 6rem;
+}
+
+.destination-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.destination-detail-content.reverse {
+    direction: rtl;
+}
+
+.destination-detail-content.reverse > * {
+    direction: ltr;
+}
+
+.destination-detail-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.destination-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.destination-detail-text p {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.destination-highlights {
+    margin-bottom: 2rem;
+}
+
+.destination-highlights h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.destination-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.destination-highlights li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+}
+
+.destination-highlights i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.destination-info {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-item i {
+    color: var(--primary-color);
+}
+
+.destination-detail-image {
+    height: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.destination-image-accra {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+.destination-image-cape-coast {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+.destination-image-kumasi {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+.destination-image-tamale {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+.destination-image-volta {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+.destination-image-kakum {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+/* Package Filter */
+.package-filter {
+    padding: 40px 0;
+    background: var(--white);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Package Cards Detailed */
+.packages-detailed {
+    padding: 80px 0;
+}
+
+.package-card-detailed {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.package-card-detailed:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.package-card-detailed.featured {
+    border: 3px solid var(--primary-color);
+    transform: scale(1.02);
+}
+
+.package-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heritage-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.complete-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.nature-bg {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.cultural-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.adventure-bg {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.luxury-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.package-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.package-rating {
+    background: rgba(255,255,255,0.9);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.package-rating i {
+    color: #fbbf24;
+}
+
+.package-content {
+    padding: 2rem;
+}
+
+.package-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.package-description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.package-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.package-duration,
+.package-group,
+.package-difficulty {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+}
+
+.package-duration i,
+.package-group i,
+.package-difficulty i {
+    color: var(--primary-color);
+}
+
+.package-itinerary {
+    margin-bottom: 2rem;
+}
+
+.package-itinerary h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.package-itinerary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-itinerary li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+}
+
+.package-itinerary i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.package-includes {
+    margin-bottom: 2rem;
+}
+
+.package-includes h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.includes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.include-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+}
+
+.include-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.package-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+}
+
+.package-price {
+    text-align: left;
+}
+
+.price-from {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.price-per {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Contact Methods */
+.contact-methods {
+    padding: 80px 0;
+}
+
+.contact-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.contact-method {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.method-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.contact-method p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.btn-chat {
+    margin-top: 1rem;
+}
+
+/* Contact Forms */
+.contact-forms {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.contact-forms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form-wrapper {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+}
+
+.form-header {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+.form-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header i {
+    margin-right: 0.5rem;
+}
+
+.contact-form {
+    padding: 2rem;
+}
+
+/* Checkbox Groups */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.checkbox-label:hover {
+    background: #f3f4f6;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+}
+
+.faq-grid {
+    display: grid;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #e5e7eb;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    border-color: var(--primary-color);
+}
+
+.faq-question {
+    padding: 1.5rem;
+    background: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background: #f9fafb;
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.faq-question i {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f9fafb;
+}
+
+.faq-answer p {
+    padding: 1.5rem;
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Map Section */
+.map-section {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.map-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.office-details p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.office-details i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+.directions {
+    margin-top: 2rem;
+}
+
+.map-embed {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Culture Page Styles */
+
+/* Culture Introduction */
+.culture-intro {
+    padding: 80px 0;
+}
+
+.culture-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.culture-intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.culture-intro-text p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.culture-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.culture-intro-image {
+    height: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.culture-hero-image {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+/* Ethnic Groups */
+.ethnic-groups {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.ethnic-groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.ethnic-group-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+}
+
+.ethnic-group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.ethnic-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ashanti-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.ga-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.ewe-bg {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.dagbani-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.ethnic-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+.ethnic-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.ethnic-content {
+    padding: 1.5rem;
+}
+
+.ethnic-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.ethnic-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.ethnic-highlights {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.highlight-tag {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Arts & Crafts */
+.arts-crafts {
+    padding: 80px 0;
+}
+
+.arts-grid {
+    display: grid;
+    gap: 4rem;
+}
+
+.art-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.art-item:nth-child(even) {
+    direction: rtl;
+}
+
+.art-item:nth-child(even) > * {
+    direction: ltr;
+}
+
+.art-image {
+    height: 300px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.kente-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.adinkra-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.woodcarving-bg {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.art-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.art-image:hover .art-overlay {
+    opacity: 1;
+}
+
+.art-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.art-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.art-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.art-features li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+}
+
+.art-features i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+/* Music & Dance */
+.music-dance {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.music-dance-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.music-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.music-info p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.music-categories {
+    margin-bottom: 2rem;
+}
+
+.music-category {
+    margin-bottom: 2rem;
+}
+
+.music-category h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.music-category i {
+    color: var(--primary-color);
+}
+
+.music-category p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.music-videos {
+    display: grid;
+    gap: 1rem;
+}
+
+.video-item {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.video-thumbnail {
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.drumming-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.dancing-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: var(--white);
+    padding: 1rem;
+}
+
+.video-overlay h4 {
+    margin-bottom: 0.25rem;
+}
+
+.video-overlay p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Festivals */
+.festivals {
+    padding: 80px 0;
+}
+
+.festivals-timeline {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.festival-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.festival-date {
+    text-align: center;
+}
+
+.festival-date .month {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.festival-date .icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.festival-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.festival-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.festival-highlights {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.festival-tag {
+    background: var(--gradient-secondary);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.festivals-cta {
+    background: var(--gradient-primary);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--white);
+}
+
+.festivals-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.festivals-cta p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Food Culture */
+.food-culture {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.food-item {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.food-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jollof-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.fufu-bg {
+    background: url('https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.kelewele-bg {
+    background: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2126&auto=format&fit=crop') center/cover;
+}
+
+.banku-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+}
+
+.food-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.food-badge {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.food-content {
+    padding: 1.5rem;
+}
+
+.food-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.food-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.spice-level {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.spice-level span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.spice-stars {
+    color: #fbbf24;
+}
+
+.cooking-experience {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+}
+
+.cooking-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.cooking-text {
+    padding: 3rem;
+}
+
+.cooking-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.cooking-text p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cooking-features {
+    margin-bottom: 2rem;
+}
+
+.cooking-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.cooking-feature i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.cooking-image {
+    height: 400px;
+}
+
+.cooking-class-bg {
+    background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop') center/cover;
+    height: 100%;
+}
+
+/* Cultural Promise */
+.cultural-promise {
+    margin-top: 3rem;
+}
+
+.promise-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.promise-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    color: var(--white);
+}
+
+.promise-item i {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design for New Components */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .destination-detail-content,
+    .culture-intro-content,
+    .music-dance-content,
+    .cooking-content,
+    .map-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .destination-detail-content.reverse {
+        direction: ltr;
+    }
+    
+    .art-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .art-item:nth-child(even) {
+        direction: ltr;
+    }
+    
+    .culture-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .festival-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .contact-forms-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 250px;
+    }
+    
+    .promise-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cooking-text {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 100px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .culture-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .promise-items {
+        grid-template-columns: 1fr;
+    }
+}

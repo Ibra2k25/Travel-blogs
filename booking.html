@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ghana Adventure - Discover Ghana</title>
+    <meta name="description" content="Book your dream trip to Ghana with our secure booking system. Choose from packages or create custom itineraries">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>🇬🇭 Discover Ghana</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="packages.html" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="culture.html" class="nav-link">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link book-now-btn active">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Book Your Ghana Adventure</h1>
+            <p>Start your journey to experience the beauty and culture of Ghana</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2>Ready to Explore Ghana?</h2>
+                    <p>Fill out our booking form and we'll get back to you within 24 hours with a personalized itinerary and pricing.</p>
+                    
+                    <div class="booking-features">
+                        <div class="booking-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h3>100% Secure Booking</h3>
+                                <p>Your information is protected with SSL encryption</p>
+                            </div>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>24/7 Support</h3>
+                                <p>Our team is always available to help you</p>
+                            </div>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h3>Flexible Dates</h3>
+                                <p>We work with your schedule to find the perfect time</p>
+                            </div>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h3>Personalized Experience</h3>
+                                <p>Each trip is customized to your preferences</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-emergency">
+                        <h3>Need Immediate Assistance?</h3>
+                        <p><i class="fas fa-phone"></i> Call us: +233 XX XXX XXXX</p>
+                        <p><i class="fas fa-envelope"></i> Email: booking@discoverghana.com</p>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form" id="bookingForm">
+                        <div class="form-header">
+                            <h3>Book Your Trip</h3>
+                            <p>Complete the form below to start planning your Ghana adventure</p>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-user"></i> Personal Information</h4>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="country">Country *</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Select your country</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="France">France</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age">Age Group *</label>
+                                    <select id="age" name="age" required>
+                                        <option value="">Select age group</option>
+                                        <option value="18-25">18-25</option>
+                                        <option value="26-35">26-35</option>
+                                        <option value="36-45">36-45</option>
+                                        <option value="46-55">46-55</option>
+                                        <option value="56-65">56-65</option>
+                                        <option value="65+">65+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Details -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-plane"></i> Travel Details</h4>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkIn">Preferred Start Date *</label>
+                                    <input type="date" id="checkIn" name="checkIn" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkOut">Preferred End Date *</label>
+                                    <input type="date" id="checkOut" name="checkOut" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="duration">Trip Duration *</label>
+                                    <select id="duration" name="duration" required>
+                                        <option value="">Select duration</option>
+                                        <option value="3-5 days">3-5 days</option>
+                                        <option value="6-7 days">6-7 days</option>
+                                        <option value="8-10 days">8-10 days</option>
+                                        <option value="11-14 days">11-14 days</option>
+                                        <option value="15+ days">15+ days</option>
+                                        <option value="Flexible">Flexible</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="guests">Number of Travelers *</label>
+                                    <select id="guests" name="guests" required>
+                                        <option value="">Select number</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6-10">6-10 People</option>
+                                        <option value="10+">10+ People</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accommodation">Accommodation Preference *</label>
+                                <select id="accommodation" name="accommodation" required>
+                                    <option value="">Select accommodation</option>
+                                    <option value="Budget">Budget (Hostels/Guesthouses)</option>
+                                    <option value="Mid-range">Mid-range (3-star hotels)</option>
+                                    <option value="Luxury">Luxury (4-5 star hotels)</option>
+                                    <option value="Mix">Mix of options</option>
+                                    <option value="No preference">No preference</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Package Selection -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-gift"></i> Package & Destinations</h4>
+                            
+                            <div class="form-group">
+                                <label for="package">Package Type *</label>
+                                <select id="package" name="package" required>
+                                    <option value="">Select package type</option>
+                                    <option value="heritage">Heritage Explorer ($899)</option>
+                                    <option value="complete">Ghana Complete ($1,299)</option>
+                                    <option value="nature">Nature & Wildlife ($749)</option>
+                                    <option value="cultural">Cultural Immersion ($999)</option>
+                                    <option value="adventure">Adventure & Hiking ($849)</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="destinations">Preferred Destinations (Select all that apply)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Accra"> Accra
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Cape Coast"> Cape Coast
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Kumasi"> Kumasi
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Tamale"> Tamale
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Volta Region"> Volta Region
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="destinations" value="Kakum National Park"> Kakum National Park
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interests">Special Interests (Select all that apply)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="History"> History & Heritage
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Culture"> Culture & Traditions
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Nature"> Nature & Wildlife
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Food"> Food & Cuisine
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Adventure"> Adventure Activities
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Photography"> Photography
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget & Additional Info -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-dollar-sign"></i> Budget & Additional Information</h4>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range (per person) *</label>
+                                <select id="budget" name="budget" required>
+                                    <option value="">Select budget range</option>
+                                    <option value="$500-$750">$500 - $750</option>
+                                    <option value="$750-$1000">$750 - $1,000</option>
+                                    <option value="$1000-$1500">$1,000 - $1,500</option>
+                                    <option value="$1500-$2000">$1,500 - $2,000</option>
+                                    <option value="$2000+">$2,000+</option>
+                                    <option value="Flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dietary">Dietary Requirements</label>
+                                <select id="dietary" name="dietary">
+                                    <option value="">No special requirements</option>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Halal">Halal</option>
+                                    <option value="Kosher">Kosher</option>
+                                    <option value="Gluten-free">Gluten-free</option>
+                                    <option value="Other">Other (please specify in message)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accessibility">Accessibility Needs</label>
+                                <select id="accessibility" name="accessibility">
+                                    <option value="">No special needs</option>
+                                    <option value="Wheelchair accessible">Wheelchair accessible</option>
+                                    <option value="Mobility assistance">Mobility assistance</option>
+                                    <option value="Visual impairment">Visual impairment support</option>
+                                    <option value="Hearing impairment">Hearing impairment support</option>
+                                    <option value="Other">Other (please specify in message)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Additional Requests or Questions</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about any special requests, questions, or anything else you'd like us to know about your trip..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Marketing Consent -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes"> 
+                                    I'd like to receive travel tips and special offers via email
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" value="yes" required> 
+                                    I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Fields for Tracking -->
+                        <input type="hidden" name="_subject" value="New Ghana Trip Booking Request">
+                        <input type="hidden" name="_cc" value="booking@discoverghana.com">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Submit Booking Request
+                            </button>
+                            <p class="form-note">We'll respond within 24 hours with your personalized itinerary and pricing</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Package Options -->
+    <section class="quick-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Not Sure Which Package to Choose?</h2>
+                <p>Here are our most popular options to help you decide</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card quick-package" data-aos="fade-up">
+                    <div class="package-badge">Popular</div>
+                    <h3>Heritage Explorer</h3>
+                    <div class="package-price">$899</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 7 days / 6 nights</li>
+                        <li><i class="fas fa-check"></i> Cape Coast Castle</li>
+                        <li><i class="fas fa-check"></i> Elmina Castle</li>
+                        <li><i class="fas fa-check"></i> Kakum National Park</li>
+                        <li><i class="fas fa-check"></i> Cultural performances</li>
+                    </ul>
+                    <button class="btn btn-outline select-package" data-package="heritage">Select This Package</button>
+                </div>
+
+                <div class="package-card quick-package featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-badge">Best Value</div>
+                    <h3>Ghana Complete</h3>
+                    <div class="package-price">$1,299</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 10 days / 9 nights</li>
+                        <li><i class="fas fa-check"></i> All major destinations</li>
+                        <li><i class="fas fa-check"></i> Northern Ghana safari</li>
+                        <li><i class="fas fa-check"></i> Volta waterfalls</li>
+                        <li><i class="fas fa-check"></i> Craft workshops</li>
+                    </ul>
+                    <button class="btn btn-outline select-package" data-package="complete">Select This Package</button>
+                </div>
+
+                <div class="package-card quick-package" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-badge">Adventure</div>
+                    <h3>Nature & Wildlife</h3>
+                    <div class="package-price">$749</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 5 days / 4 nights</li>
+                        <li><i class="fas fa-check"></i> Mole National Park</li>
+                        <li><i class="fas fa-check"></i> Wildlife safari</li>
+                        <li><i class="fas fa-check"></i> Wli waterfalls</li>
+                        <li><i class="fas fa-check"></i> Monkey sanctuary</li>
+                    </ul>
+                    <button class="btn btn-outline select-package" data-package="nature">Select This Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🇬🇭 Discover Ghana</h3>
+                    <p>Your gateway to experiencing the rich culture, natural beauty, and warm hospitality of Ghana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                        <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                        <p><i class="fas fa-envelope"></i> booking@discoverghana.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Secure Booking</h4>
+                    <p>Your booking is protected with SSL encryption</p>
+                    <div class="security-badges">
+                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Discover Ghana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Package selection functionality
+        document.querySelectorAll('.select-package').forEach(button => {
+            button.addEventListener('click', function() {
+                const packageType = this.dataset.package;
+                const packageSelect = document.getElementById('package');
+                
+                // Find the matching option
+                for (let option of packageSelect.options) {
+                    if (option.value === packageType) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+                
+                // Scroll to form
+                document.querySelector('.booking-form').scrollIntoView({ behavior: 'smooth' });
+                
+                // Show feedback
+                showNotification(`${packageType.charAt(0).toUpperCase() + packageType.slice(1)} package selected!`, 'success');
+            });
+        });
+
+        // URL parameter handling for pre-selection
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const packageParam = urlParams.get('package');
+            const destinationParam = urlParams.get('destination');
+            
+            if (packageParam) {
+                const packageSelect = document.getElementById('package');
+                for (let option of packageSelect.options) {
+                    if (option.value === packageParam) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+            
+            if (destinationParam) {
+                const destinationCheckboxes = document.querySelectorAll('input[name="destinations"]');
+                destinationCheckboxes.forEach(checkbox => {
+                    if (checkbox.value.toLowerCase().includes(destinationParam.toLowerCase())) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

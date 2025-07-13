@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Discover Ghana</title>
+    <meta name="description" content="Get in touch with Discover Ghana for bookings, inquiries, and travel planning. Multiple ways to reach our travel experts">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>🇬🇭 Discover Ghana</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="packages.html" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="culture.html" class="nav-link">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link book-now-btn">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Get in Touch</h1>
+            <p>We're here to help you plan your perfect Ghana adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-methods-grid">
+                <div class="contact-method" data-aos="fade-up">
+                    <div class="method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our travel experts</p>
+                    <div class="contact-details">
+                        <p><strong>Ghana:</strong> +233 XX XXX XXXX</p>
+                        <p><strong>International:</strong> +233 XX XXX XXXX</p>
+                        <p><strong>Hours:</strong> 8:00 AM - 6:00 PM (GMT)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="200">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your questions anytime</p>
+                    <div class="contact-details">
+                        <p><strong>General:</strong> info@discoverghana.com</p>
+                        <p><strong>Bookings:</strong> booking@discoverghana.com</p>
+                        <p><strong>Support:</strong> support@discoverghana.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="400">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Come to our office in Accra</p>
+                    <div class="contact-details">
+                        <p><strong>Address:</strong><br>
+                        123 Independence Avenue<br>
+                        Accra, Ghana</p>
+                        <p><strong>Office Hours:</strong><br>
+                        Mon-Fri: 8:00 AM - 6:00 PM<br>
+                        Sat: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method" data-aos="fade-up" data-aos-delay="600">
+                    <div class="method-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Get instant answers to your questions</p>
+                    <div class="contact-details">
+                        <p><strong>Available:</strong> 24/7</p>
+                        <p><strong>Response:</strong> Within 2 minutes</p>
+                        <button class="btn btn-primary btn-chat">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Forms Section -->
+    <section class="contact-forms">
+        <div class="container">
+            <div class="contact-forms-container">
+                <!-- General Inquiry Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3><i class="fas fa-question-circle"></i> General Inquiry</h3>
+                        <p>Have questions about Ghana or our services? We're here to help!</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/YOUR_GENERAL_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="general-name">Full Name *</label>
+                                <input type="text" id="general-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="general-email">Email Address *</label>
+                                <input type="email" id="general-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="general-phone">Phone Number</label>
+                                <input type="tel" id="general-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="general-subject">Subject *</label>
+                                <select id="general-subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="General Information">General Information</option>
+                                    <option value="Destinations">Destinations</option>
+                                    <option value="Packages">Packages</option>
+                                    <option value="Pricing">Pricing</option>
+                                    <option value="Travel Tips">Travel Tips</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="general-message">Message *</label>
+                            <textarea id="general-message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="_subject" value="General Inquiry - Discover Ghana">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Quick Booking Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3><i class="fas fa-calendar-plus"></i> Quick Booking Request</h3>
+                        <p>Ready to book? Send us your travel details and we'll get back to you quickly!</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/YOUR_BOOKING_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Full Name *</label>
+                                <input type="text" id="booking-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email Address *</label>
+                                <input type="email" id="booking-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number *</label>
+                                <input type="tel" id="booking-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-travelers">Number of Travelers</label>
+                                <select id="booking-travelers" name="travelers">
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5+">5+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-dates">Preferred Travel Dates</label>
+                                <input type="text" id="booking-dates" name="dates" placeholder="e.g., March 15-25, 2024">
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-budget">Budget Range</label>
+                                <select id="booking-budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="$500-$1000">$500 - $1,000</option>
+                                    <option value="$1000-$1500">$1,000 - $1,500</option>
+                                    <option value="$1500-$2000">$1,500 - $2,000</option>
+                                    <option value="$2000+">$2,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="booking-interests">Interests & Preferences</label>
+                            <textarea id="booking-interests" name="interests" rows="3" placeholder="Tell us about your interests and what you'd like to experience in Ghana..."></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="_subject" value="Quick Booking Request - Discover Ghana">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i> Send Booking Request
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Custom Tour Request Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3><i class="fas fa-route"></i> Custom Tour Request</h3>
+                        <p>Looking for something unique? Let us create a personalized itinerary just for you!</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/YOUR_CUSTOM_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custom-name">Full Name *</label>
+                                <input type="text" id="custom-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="custom-email">Email Address *</label>
+                                <input type="email" id="custom-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custom-duration">Trip Duration *</label>
+                                <select id="custom-duration" name="duration" required>
+                                    <option value="">Select duration</option>
+                                    <option value="3-5 days">3-5 days</option>
+                                    <option value="6-7 days">6-7 days</option>
+                                    <option value="8-10 days">8-10 days</option>
+                                    <option value="11-14 days">11-14 days</option>
+                                    <option value="15+ days">15+ days</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="custom-group">Group Size *</label>
+                                <select id="custom-group" name="group" required>
+                                    <option value="">Select group size</option>
+                                    <option value="Solo">Solo traveler</option>
+                                    <option value="2 people">2 people</option>
+                                    <option value="3-5 people">3-5 people</option>
+                                    <option value="6-10 people">6-10 people</option>
+                                    <option value="10+ people">10+ people</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="custom-interests">Special Interests</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="History"> History & Heritage
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="Culture"> Culture & Traditions
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="Nature"> Nature & Wildlife
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="Adventure"> Adventure Activities
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="Food"> Food & Cuisine
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="Photography"> Photography
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="custom-description">Describe Your Ideal Trip *</label>
+                            <textarea id="custom-description" name="description" rows="5" required placeholder="Tell us about your dream Ghana experience. What would you like to see, do, and experience?"></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="_subject" value="Custom Tour Request - Discover Ghana">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-magic"></i> Request Custom Tour
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Partnership & Business Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3><i class="fas fa-handshake"></i> Partnership & Business</h3>
+                        <p>Interested in partnerships, group bookings, or business opportunities? Let's talk!</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/YOUR_BUSINESS_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="business-name">Contact Name *</label>
+                                <input type="text" id="business-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-email">Email Address *</label>
+                                <input type="email" id="business-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="business-company">Company/Organization *</label>
+                                <input type="text" id="business-company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-type">Inquiry Type *</label>
+                                <select id="business-type" name="type" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option value="Group Booking">Group Booking</option>
+                                    <option value="Corporate Travel">Corporate Travel</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="Media/Press">Media/Press</option>
+                                    <option value="Supplier">Supplier</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business-message">Message *</label>
+                            <textarea id="business-message" name="message" rows="5" required placeholder="Tell us about your business inquiry, partnership opportunity, or group booking needs..."></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="_subject" value="Business Inquiry - Discover Ghana">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> Send Business Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions about traveling to Ghana</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>Do I need a visa to visit Ghana?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most visitors need a visa to enter Ghana. You can apply online or at Ghanaian embassies. Some nationalities may be eligible for visa on arrival. We recommend checking with the Ghana Immigration Service for the most current requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>What's the best time to visit Ghana?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The best time to visit Ghana is during the dry season (November to March) when the weather is pleasant and there's less rainfall. However, Ghana is a year-round destination, and each season has its unique advantages.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>What vaccinations do I need?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yellow fever vaccination is required for entry into Ghana. We also recommend vaccinations for hepatitis A and B, typhoid, and malaria prophylaxis. Please consult with a travel medicine specialist before your trip.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question">
+                        <h3>What currency is used in Ghana?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The currency is the Ghanaian Cedi (GHS). US dollars are widely accepted in tourist areas, but it's best to have local currency for smaller purchases. ATMs are available in major cities and towns.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>Is Ghana safe for tourists?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ghana is generally considered one of the safest countries in West Africa for tourists. As with any travel, it's important to stay aware of your surroundings and follow basic safety precautions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>How do I get around Ghana?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Transportation options include domestic flights, buses, taxis, and rental cars. For our tour packages, we provide comfortable, air-conditioned vehicles with experienced drivers for all transportation needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-info">
+                    <h3>Find Our Office</h3>
+                    <div class="office-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Independence Avenue, Accra, Ghana</p>
+                        <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@discoverghana.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM | Sat: 9:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="directions">
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5234567891!2d-0.1969!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0x7a0a7a0a7a0a7a0a!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🇬🇭 Discover Ghana</h3>
+                    <p>Your gateway to experiencing the rich culture, natural beauty, and warm hospitality of Ghana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Independence Avenue, Accra, Ghana</p>
+                        <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@discoverghana.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <div class="business-hours">
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                        <p><strong>Emergency:</strong> 24/7 Available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Discover Ghana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Live chat button functionality
+        document.querySelector('.btn-chat').addEventListener('click', function() {
+            // This would typically integrate with a live chat service
+            alert('Live chat feature would be integrated with a service like Intercom, Zendesk, or custom chat system.');
+        });
+    </script>
+</body>
+</html>
