@@ -1,0 +1,25 @@
+{
+  "name": "tiktok-ai-bot",
+  "version": "1.0.0",
+  "description": "TikTok AI Video Bot - Node.js dependencies",
+  "main": "index.js",
+  "scripts": {
+    "install-deps": "npm install",
+    "setup": "npm install && python -m playwright install"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "tiktok",
+    "automation",
+    "ai",
+    "video",
+    "bot"
+  ],
+  "author": "TikTok AI Bot Team",
+  "license": "MIT"
+}
