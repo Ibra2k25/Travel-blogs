@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ghana Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="gradient-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ghana Travel</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="tours.html" class="nav-link">Tours</a></li>
+                <li><a href="booking.html" class="nav-link">Booking</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Have questions? We're here to help plan your perfect Ghana adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="booking">Booking Question</option>
+                                    <option value="tours">Tour Information</option>
+                                    <option value="custom">Custom Package</option>
+                                    <option value="support">Support</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your travel plans or any questions you have..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for travel tips and special offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Office</h4>
+                            <p>123 Independence Avenue<br>East Legon, Accra<br>Ghana</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Numbers</h4>
+                            <p>+233 24 123 4567<br>+233 20 987 6543</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@ghanatravel.com<br>bookings@ghanatravel.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Interactive Map Coming Soon</p>
+                    <p>123 Independence Avenue, East Legon, Accra, Ghana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the best time to visit Ghana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The best time to visit Ghana is during the dry season from November to March when the weather is cooler and there's less rainfall. This is ideal for outdoor activities and wildlife viewing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need a visa to visit Ghana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most visitors need a visa to enter Ghana. Citizens of ECOWAS countries don't need a visa. We recommend checking with the Ghanaian embassy in your country for the most current visa requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What vaccinations do I need?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yellow fever vaccination is mandatory. We also recommend vaccinations for hepatitis A & B, typhoid, and malaria prophylaxis. Consult your doctor for personalized medical advice.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What currency is used in Ghana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Ghanaian Cedi (GHS) is the official currency. US Dollars and Euros are widely accepted. Credit cards are accepted in major hotels and restaurants in Accra and other major cities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is it safe to travel in Ghana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ghana is considered one of the safest countries in West Africa. Like any destination, we recommend taking standard travel precautions and staying aware of your surroundings.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What should I pack for Ghana?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pack light, breathable clothing, comfortable walking shoes, sunscreen, insect repellent, and any necessary medications. Don't forget your camera to capture the amazing experiences!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ghana Travel</span>
+                    </div>
+                    <p>Your gateway to discovering the beauty and culture of Ghana</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@ghanatravel.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ghana Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
